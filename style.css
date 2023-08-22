@@ -68,3 +68,13 @@ body {
     margin-left: 10px;
     cursor: pointer;
 }
+
+.msg-aluno {
+    margin-left: 580px;
+    color: #A0522D;
+}
+
+.msg-atendente{
+    margin-left: 3px;
+    color: #A0522D;
+}
