@@ -70,11 +70,12 @@ body {
 }
 
 .msg-aluno {
-    margin-left: 580px;
+    text-align: end;
     color: #A0522D;
 }
 
 .msg-atendente {
+    text-align: left;
     margin-left: 3px;
     color: #A0522D;
 }
