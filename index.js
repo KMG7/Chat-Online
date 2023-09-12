@@ -15,7 +15,7 @@ function adicionarMensagem(nome, texto, classe) {
     chatMensagem.appendChild(divTexto);
 }
 
-function enviarMensagem(){
+function enviarMensagem() {
 
     let inputMensagem = document.getElementById("inputMensagem");
     let mensagem = inputMensagem.value;

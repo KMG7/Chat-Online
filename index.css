@@ -31,16 +31,16 @@ body {
 
 ::-webkit-scrollbar-track {
     border-radius: 8px;
-    background-color:#f5f5f5;
+    background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 8px;
     background-color: #a06a2d;
-    
+
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 12px;
 }
 
