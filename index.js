@@ -1,31 +1,44 @@
 function adicionarMensagem(nome, texto, classe) {
 
-    let divNome = document.createElement("div");
-    let divTexto = document.createElement("div");
+  let divNome = document.createElement("div");
+  let divTexto = document.createElement("div");
 
-    divNome.className = "msg-" + classe;
-    divTexto.className = "msg mensagem-" + classe;
+  divNome.className = "msg-" + classe;
+  divTexto.className = "msg mensagem-" + classe;
 
-    divNome.innerHTML = "<strong>" + nome + " diz:</strong>";
-    divTexto.textContent = texto;
+  divNome.innerHTML = "<strong>" + nome + " diz:</strong>";
+  divTexto.textContent = texto;
 
-    let chatMensagem = document.querySelector(".chat-mensagem");
+  let chatMensagem = document.querySelector(".chat-mensagem");
 
-    chatMensagem.appendChild(divNome);
-    chatMensagem.appendChild(divTexto);
+  chatMensagem.appendChild(divNome);
+  chatMensagem.appendChild(divTexto);
 }
 
 function enviarMensagem() {
 
-    let inputMensagem = document.getElementById("inputMensagem");
-    let mensagem = inputMensagem.value;
+  let inputMensagem = document.getElementById("inputMensagem");
+  let mensagem = inputMensagem.value;
 
-    if (mensagem.trim() !== "") {
+  if (mensagem.trim() !== "") {
 
-        adicionarMensagem("Você", mensagem, "aluno");
-        inputMensagem.value = "";
-    }
-    else {
-        alert('Digite uma mensagem!');
-    }
+    adicionarMensagem("Você", mensagem, "aluno");
+    inputMensagem.value = "";
+
+  } else {
+
+    alert('Digite uma mensagem!');
+  }
+
+  let chat = document.querySelector(".chat-mensagem");
+
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function enterPress(event) {
+
+  if (event.key == "Enter") {
+
+    enviarMensagem();
+  }      
 }

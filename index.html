@@ -47,16 +47,10 @@
 
             <div class="msg-atendente"><strong>Atendente diz:</strong></div>
             <div class="msg mensagem-atendente">Nós que agradecemos! Aguardamos você.</div>
-
-            <div class="msg-atendente"><strong>Atendente diz:</strong></div>
-            <div class="msg mensagem-atendente">Caso tenha mais alguma dúvida, estamos por aqui!</div>
-
-            <div class="msg-aluno"><strong>Você diz:</strong></div>
-            <div class="msg mensagem-aluno"> Agradeço a atenção!</div>
         </div>
 
         <div class="input-box">
-            <input id="inputMensagem" type="text" placeholder="Digite sua mensagem...">
+            <input id="inputMensagem" onkeypress="enterPress(event)" type="text" placeholder="Digite sua mensagem...">
             <button id="buttonEnviar" onclick="enviarMensagem()">Enviar</button>
         </div>
     </div>
